@@ -1,0 +1,14 @@
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+footer .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  fill: white !important;
+  height: 40px !important;
+  margin-block: 2rem;
+}/*# sourceMappingURL=footer.css.map */
