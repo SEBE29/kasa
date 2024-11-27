@@ -11,9 +11,6 @@
       // position: absolute;
       width: 100%;
       height: auto;
-      max-height: 500px;
-      overflow: hidden;
-      object-fit: cover;
       border-radius: 10px;
     }
     .arrow {
@@ -26,6 +23,12 @@
     }
     .arrow_right {
       right: 10px;
+    }
+
+    .current-image {
+      position: absolute;
+      color: white;
+      bottom: 1rem;
     }
   }
 
@@ -52,18 +55,16 @@
       margin-left: 10px;
     }
   }
-
   .badge {
     background-color: #ff6060;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 700;
-    // min-width: 100px;
+    min-width: 100px;
     color: white;
     text-align: center;
-    // padding-block: 4px;
-    // margin-right: 10px;
-    padding: 4px 12px;
+    padding-block: 4px;
+    margin-right: 10px;
   }
 
   .rating {
@@ -72,14 +73,15 @@
   }
 
   .flex {
-    flex-wrap: wrap;
     display: flex;
     width: 100%;
-    // justify-content: space-between;
+    justify-content: space-between;
     flex-grow: 1;
-    gap: 4px;
   }
 
+  .tags {
+    justify-content: start;
+  }
   .drop_gauche,
   .drop_droite {
     width: 47%;
@@ -99,14 +101,23 @@
     .drop_droite {
       width: 100%;
     }
+
     .cover-image {
       .arrow img {
         height: 20px;
       }
     }
     h1 {
-      font-size: 18px;
+      font-size: 16px;
       text-align: start;
+    }
+
+    .host {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-top: 1rem;
     }
   }
 }

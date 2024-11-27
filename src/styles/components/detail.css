@@ -12,10 +12,6 @@
 .detail-page .cover-image .converimg {
   width: 100%;
   height: auto;
-  max-height: 500px;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 10px;
 }
 .detail-page .cover-image .arrow {
@@ -28,6 +24,11 @@
 }
 .detail-page .cover-image .arrow_right {
   right: 10px;
+}
+.detail-page .cover-image .current-image {
+  position: absolute;
+  color: white;
+  bottom: 1rem;
 }
 .detail-page h1 {
   margin-top: 1rem;
@@ -54,20 +55,24 @@
   border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
+  min-width: 100px;
   color: white;
   text-align: center;
-  padding: 4px 12px;
+  padding-block: 4px;
+  margin-right: 10px;
 }
 .detail-page .rating {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 .detail-page .flex {
-  flex-wrap: wrap;
   display: flex;
   width: 100%;
+  justify-content: space-between;
   flex-grow: 1;
-  gap: 4px;
+}
+.detail-page .tags {
+  justify-content: start;
 }
 .detail-page .drop_gauche,
 .detail-page .drop_droite {
@@ -89,7 +94,14 @@
     height: 20px;
   }
   .detail-page h1 {
-    font-size: 18px;
+    font-size: 16px;
     text-align: start;
+  }
+  .detail-page .host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=detail.css.map */

@@ -1,14 +1,12 @@
-import Card from "./Card";
+import Card from "../components/Card";
 import "../styles/main.scss";
 import data from "../logements";
+import Barniere from "../components/Baniere";
 
 function Home() {
   return (
     <main>
-      <section className="hero">
-        <div className="overlay"></div>
-        <h1>Chez vous, partout et ailleurs</h1>
-      </section>
+      <Barniere />
       <section className="cards">
         {data.map((location) => (
           <Card

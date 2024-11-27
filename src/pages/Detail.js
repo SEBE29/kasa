@@ -37,7 +37,7 @@ function DetailPage() {
     );
   };
 
-  function chaneImage(action) {
+  function changeImage(action) {
     let nombreImages = accommodation.pictures?.length;
     if (action === "left") {
       setCurrentImage((currentImage - 1 + nombreImages) % nombreImages);
@@ -57,7 +57,7 @@ function DetailPage() {
           />
           <div
             onClick={() => {
-              chaneImage("letf");
+              changeImage("letf");
             }}
             className="arrow arrow_left"
           >
@@ -65,18 +65,21 @@ function DetailPage() {
           </div>
           <div
             onClick={() => {
-              chaneImage("right");
+              changeImage("right");
             }}
             className="arrow arrow_right"
           >
             <img src={arrow_right} alt="Icon suivant" />
           </div>
+          <p className="current-image">
+            {currentImage + 1}/{accommodation.pictures?.length}
+          </p>
         </div>
         <div className="flex infos">
           <div className="">
             <h1>{accommodation.title}</h1>
             <p className="location">{accommodation.location}</p>
-            <div className="flex">
+            <div className="flex tags">
               {accommodation.tags.map((tag, index) => {
                 return (
                   <div key={`tag_${index}`} className="badge">

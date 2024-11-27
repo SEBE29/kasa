@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Detail from "./pages/Detail";
-import NotFound from "./components/404";
+import NotFound from "./pages/404";
 
 function App() {
   return (
