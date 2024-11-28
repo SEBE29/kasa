@@ -6,7 +6,7 @@ import Barniere from "../components/Baniere";
 function Home() {
   return (
     <main>
-      <Barniere />
+      <Barniere title="Chez vous, partout et ailleurs" cover="overlay" />
       <section className="cards">
         {data.map((location) => (
           <Card

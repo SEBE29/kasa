@@ -1,8 +1,8 @@
-export default function Barniere() {
+export default function Barniere({ title = "", cover }) {
   return (
     <section className="hero">
-      <div className="overlay"></div>
-      <h1>Chez vous, partout et ailleurs</h1>
+      <div className={cover}></div>
+      {title && <h1>{title}</h1>}
     </section>
   );
 }

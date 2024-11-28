@@ -1,4 +1,5 @@
 import Dropdown from "../components/Dropdown";
+import Barniere from "../components/Baniere";
 
 function About() {
   const fiabilite =
@@ -12,7 +13,8 @@ function About() {
 
   return (
     <main>
-      <section className="hero about_hero"></section>
+      {/* <section className="hero about_hero"></section> */}
+      <Barniere cover="hero about_hero" />
       <section className="about_info">
         <Dropdown title="Fiabilité" content={fiabilite} />
         <Dropdown title="Respect" content={respect} />
